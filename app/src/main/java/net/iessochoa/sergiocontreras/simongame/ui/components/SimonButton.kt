@@ -29,13 +29,13 @@ fun SimonButton(
     Como vamos a necesitar un Toast... ¿Qué información necesitará transmitir? Eso es una pista de la firma del lambda.
     */
     //Si se pulsa se pone blanco
-    val botonActivo = if (isActive) Color.White else color
+    val botonActivo = if (isActive) Color.Black else color
 
     Box(
         modifier = modifier
             .aspectRatio(1f) //Cuadrado
             .background(botonActivo)
-            .clickable { onClick}
+            .clickable { onClick() }
     )
 
 }
